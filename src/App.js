@@ -11,11 +11,13 @@ function App() {
   }
 
   return (
+    <body>
     <div className="App">
       {
         currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
       }
     </div>
+    </body>
   );
 }
 
